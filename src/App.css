@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: justify;
 }
 
 .App-logo {
@@ -14,18 +14,90 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9),  rgba(22, 22, 22, 0.9), rgba(28, 29, 29, 0.9)), url("./images/bg.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+img {
+  border: 1px solid #ffffff;
+}
+
+
+.Portfolio-container {
+  width: 100%;
+}
+
+.profile-div {
+  border-right: 1px solid #ffa86e;
+}
+
+.profile-title {
+  color: #ff6c0a;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.stack-name {
+  color: #05ff11;
+  text-align: center;
+}
+
+.accordion-content {
+  background-color: rgba(0,0,0,0.0);
+}
+
+.accordion-bg {
+  background-color: transparent!important;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion-div {
+  background-color:#ff6c0a;
+  color: #ffffff;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion-div:hover {
+  background-color: #ff6c0a;
+  color: #FFFFFF;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+} 
+
+.accordion-di:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 @keyframes App-logo-spin {
